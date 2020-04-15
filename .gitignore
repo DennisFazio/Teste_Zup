@@ -1,0 +1,6 @@
+Gemfile.lock
+*.html
+*.png
+*.DS_Store
+*.json
+

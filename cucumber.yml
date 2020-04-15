@@ -1,0 +1,21 @@
+
+
+default: -p dot -p json
+
+
+#Ambiente pronto
+Ambiente_Prod: -p dot -p prod -p json
+
+#modo de execução
+bdd: --format pretty
+dot: --format progress
+
+#Qual site será testado
+prod: AMBIENTE=producao
+
+#Relatórios
+html: --format html --out=reports/relatorio.html
+json: --format json -o "reports/report.json"
+
+#Repetir teste caso falhe
+retry: --retry 1
